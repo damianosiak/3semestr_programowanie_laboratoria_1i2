@@ -8,7 +8,11 @@ import java.util.concurrent.atomic.AtomicReference;
  * This class is responsible for various calculation methods
  */
 public class Calculations {
-    private Vector<Long> history = new Vector<Long>(); /** This vector is containing all history of results - in long variable system*/
+    private Vector<Long> history = new Vector<Long>(); /** This vector is containing all history of results - in long variable system
+     * @return*/
+    public Vector<Long> getHistoryVector(){
+        return history;
+    }
 
     /**
      * This method is responsible for getting history of results.
